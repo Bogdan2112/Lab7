@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css  ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="boxicons.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="" class="nav-img"></a>
+            <div class="alahuakbar" id="NavLinks">
+                <div class="nav-links " >
+                    <i class="fa-solid fa-xmark x-mark" onclick="hideMenu()"></i>
+                    <a href="index.html" class="da">Home</a>
+                    <a href="tours.html">Tours</a>
+                    <a href="events.html">Events</a>
+                    <a href="login.html">Log In</a>
+                    <a href="conctact.html">Contact</a>
+                </div>
+            </div>
+            <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="header-content">
+            <h2>Explore the colorful world</h2>
+            <div class="line"></div>
+            <h1><span class="auto-type"></span></h1>
+            <a href="#services" class="ctn" >View More</a>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h1>Services we offer</h1>
+        <p class="after-line">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="col">
+                <h3>Service 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illum quo esse, eius odit perspiciatis laudantium rem sunt ullam veritatis dolorum, in inventore facere magnam corporis!</p>
+            </div>
+
+            <div class="col">
+                <h3>Service 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illum quo esse, eius odit perspiciatis laudantium rem sunt ullam veritatis dolorum, in inventore facere magnam corporis!</p>
+            </div>
+
+            <div class="col">
+                <h3>Service 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illum quo esse, eius odit perspiciatis laudantium rem sunt ullam veritatis dolorum, in inventore facere magnam corporis!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How It Works</span>
+            <h1>Follow This 3 Easy Steps</h1>
+        </div>
+
+        <div class="ride-container">
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <h2>Choose a location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugiat, perferendis officia quam fugit quis</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-regular fa-calendar"></i>
+                <h2>Pick a date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugiat, perferendis officia quam fugit quis</p>
+            </div>
+            
+            <div class="box">
+                <i class="fa-solid fa-hotel"></i>
+                <h2>Book a hotel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugiat, perferendis officia quam fugit quis</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" >
+        <p>
+            Our Social Media
+        </p>
+        
+        <div class="icons">
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-odnoklassniki socialize" ></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-facebook socialize"></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-twitter socialize"></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-instagram socialize"></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-skype socialize"></i></a>
+        </div>    
+        <p class="semn">Made with <i class="fa-regular fa-heart inima"></i> by Mnogouvajaemii Bogdan</p>
+    </section>
+
+    
+
+
+    <script src="main.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["A WONDERFUL GIFT","A MAGIC PLACE", "OUR HOME"],
+            typeSpeed :50,
+            backSpeed :50,
+            looped : true
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+
+    <section class="header login-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="" class="nav-img"></a>
+            <div class="alahuakbar" id="NavLinks">
+                <div class="nav-links " >
+                    <i class="fa-solid fa-xmark x-mark" onclick="hideMenu()"></i>
+                    <a href="index.html" class="da">Home</a>
+                    <a href="tours.html">Tours</a>
+                    <a href="events.html">Events</a>
+                    <a href="login.html">Log In</a>
+                    <a href="conctact.html">Contact</a>
+                </div>
+            </div>
+            <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="login">
+            <form action="" class="login__form">
+               <h1 class="login__title">Log In</h1>
+   
+               <div class="login__content">
+                  <div class="login__box">
+                     <i class="ri-user-3-line login__icon"></i>
+   
+                     <div class="login__box-input">
+                        <input type="email" required class="login__input" id="username" placeholder=" ">
+                        <label for="login-email" class="login__label">Email</label>
+                     </div>
+                  </div>
+   
+                  <div class="login__box">
+                     <i class="ri-lock-2-line login__icon"></i>
+   
+                     <div class="login__box-input">
+                        <input type="password" required class="login__input" id="password" placeholder=" ">
+                        <label for="login-pass" class="login__label">Password</label>
+                        <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                     </div>
+                  </div>
+               </div>
+   
+               <div class="login__check">
+                  <div class="login__check-group">
+                     <input type="checkbox" class="login__check-input" id="login-check">
+                     <label for="login-check" class="login__check-label">Remember me</label>
+                  </div>
+   
+                  <a href="#" class="login__forgot">Forgot Password?</a>
+               </div>
+   
+               <button type="submit" class="login__button" onclick="login()">Login</button>
+   
+               <p class="login__register">
+                  Don't have an account? <a href="#">Register</a>
+               </p>
+            </form>
+         </div>
+
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>

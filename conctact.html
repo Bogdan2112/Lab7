@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <title>Contact</title>
+</head>
+<body>
+
+    <section class="sub-header sub1 " >
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="" class="nav-img"></a>
+            <div class="alahuakbar" id="NavLinks">
+                <div class="nav-links " >
+                    <i class="fa-solid fa-xmark x-mark" onclick="hideMenu()"></i>
+                    <a href="index.html" class="da">Home</a>
+                    <a href="tours.html">Tours</a>
+                    <a href="events.html">Events</a>
+                    <a href="login.html">Log In</a>
+                    <a href="conctact.html">Contact</a>
+                </div>
+            </div>
+            <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="header-content sub-content">
+            <h1>Contact Us</h1>
+            <div class="line"></div>
+        </div>
+
+    </section>
+
+    <!-- Contact ASS Content  -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10874.633160173185!2d28.8690264!3d47.0469357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cfa07dcbcd1%3A0x41c3381e876c9606!2zQ2VudHJ1bCBkZSBFeGNlbGVuyJvEgyDDrm4gRWNvbm9taWUgyJlpIEZpbmFuyJtl!5e0!3m2!1sro!2s!4v1674937217666!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div class="contact-div">
+                    <i class="fa-solid fa-house socialize"></i>
+                    <span>
+                        <h5>Telecentru</h5>
+                        <p >Strada CEEF</p>
+                    </span>
+                </div>
+                
+                <div class="contact-div">
+                    <i class="fa-solid fa-phone socialize"></i>
+                    <span>
+                        <h5>8 800 555</h5>
+                        <p >Monday to Friday, 10 AM to 5 PM</p>
+                    </span>
+                </div >
+
+                <div class="contact-div">
+                    <i class="fa-solid fa-envelope socialize"></i>
+                <span>
+                    <h5>info@ceef.md</h5>
+                    <p>Email us for more information</p>
+                </span>
+                </div>
+                
+            </div>
+
+            <div class="contact-col">
+                <form action="">
+                    <input type="text"    class="name" placeholder="Enter Your Name">
+                    <input type="email"   class="email" placeholder="Enter Your Email Adress">
+                    <input type="text"    class="subject" placeholder="Enter Your Subject">
+                    <textarea  rows="8"   class="message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn about-btn send-btn" onclick="SendMail()">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+  
+    <!-- Footer -->
+
+    <section class="footer">
+        <p>
+            Useful Links
+        </p>
+        <p>Made with <i class="fa-regular fa-heart inima"></i> by Mnogouvajaemii Bogdan</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-odnoklassniki socialize" ></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-facebook socialize"></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-twitter socialize"></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-instagram socialize"></i></a>
+            <a href="https://www.instagram.com/mnogouvajaemii_bogdan/" target="_blank"><i class="fa-brands fa-skype socialize"></i></a>
+        </div>    
+    </section>
+
+    <script src="main.js"></script> 
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>   
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("0fTkuVvJOAAjsPbEM");
+        })();
+    </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
